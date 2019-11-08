@@ -5,7 +5,7 @@ class Personage {
     private Level level;
 
     Personage() {
-        this.health = Health.initialize();
+        health = Health.initialize();
         level = Level.initialize();
     }
 

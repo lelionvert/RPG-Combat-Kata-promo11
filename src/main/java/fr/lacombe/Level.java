@@ -1,6 +1,6 @@
 package fr.lacombe;
 
-class Level {
+final class Level {
     private final int value;
 
     private Level(int value) {
