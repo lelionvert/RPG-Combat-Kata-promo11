@@ -24,10 +24,10 @@ class PersonageTest {
         Personage paul = new Personage();
 
         // When
-        Health actual = paul.getHealth();
+        boolean actual = paul.isFullHealth();
 
         // Then
-        assertThat(actual).isEqualTo(Health.of(1000));
+        assertThat(actual).isTrue();
     }
 
     @Test
