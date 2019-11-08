@@ -3,7 +3,7 @@ package fr.lacombe;
 class Health {
     private int value;
 
-    Health() {
+    private Health() {
         this.value = 1000;
     }
 
