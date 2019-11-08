@@ -14,8 +14,7 @@ class Personage {
     }
 
     boolean isAlive() {
-        if(health.equals(Health.of(-100))) return false;
-        if(health.equals(Health.of(-1))) return false;
+        if(health.isDepleted()) return false;
         return true;
     }
 

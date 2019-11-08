@@ -27,6 +27,10 @@ final class Health {
         return new Health(value - points);
     }
 
+    boolean isDepleted() {
+        return value <= 0;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
