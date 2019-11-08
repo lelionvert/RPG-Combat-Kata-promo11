@@ -40,4 +40,14 @@ class PersonageTest {
         // Then
         assertThat(actual).isTrue();
     }
+
+    @Test
+void new_personage_has_level_2() {
+        // When
+        Personage mlichel = Personage.initialize();
+        mlichel.damage(paul, 100);
+
+        // Then
+        assertThat(paul.getHealth()).isEqualTo(900);
+    }
 }

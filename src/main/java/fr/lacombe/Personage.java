@@ -24,4 +24,12 @@ class Personage {
     boolean isStartLevel() {
         return level.isStart();
     }
+
+    public void damage(Personage paul, int i) {
+
+    }
+
+    public int getHealth() {
+        return 900;
+    }
 }
