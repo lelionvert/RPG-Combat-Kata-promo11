@@ -11,7 +11,7 @@ class Personage {
         return true;
     }
 
-    int getHealth() {
-        return 1000;
+    Health getHealth() {
+        return health;
     }
 }

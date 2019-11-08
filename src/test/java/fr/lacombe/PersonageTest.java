@@ -24,9 +24,9 @@ class PersonageTest {
         Personage paul = new Personage();
 
         // When
-        int actual = paul.getHealth();
+        Health actual = paul.getHealth();
 
         // Then
-        assertThat(actual).isEqualTo(1000);
+        assertThat(actual).isEqualTo(Health.of(1000));
     }
 }
