@@ -17,10 +17,7 @@ class Personage {
         return health.isFull();
     }
 
-    public int level() {
-        return 1;
-    }
-    public boolean isStartLevel() {
+    boolean isStartLevel() {
         return level.isStart();
     }
 }
