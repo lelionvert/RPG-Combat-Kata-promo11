@@ -54,10 +54,11 @@ class PersonageTest {
         assertThat(paul.getHealth()).isEqualTo(Health.of(resultHealth));
     }
 
-    @Test
-    void personage_dies_when_damages_exceed_health() {
+    @ParameterizedTest
+    @ValueSource(ints = {1001})
+    void personage_dies_when_damages_exceed_health(int damage) {
         // When
-        paul.damagedBy(1001);
+        paul.damagedBy(damage);
 
         // Then
         assertThat(paul.isAlive()).isFalse();
