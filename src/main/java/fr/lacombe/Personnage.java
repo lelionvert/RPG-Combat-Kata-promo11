@@ -1,7 +1,7 @@
 package fr.lacombe;
 
-public class Personnage {
-    public boolean isAlive() {
+class Personnage {
+    boolean isAlive() {
         return true;
     }
 }
