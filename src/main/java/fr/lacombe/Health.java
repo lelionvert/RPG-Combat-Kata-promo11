@@ -17,4 +17,7 @@ final class Health {
         return value == MAX;
     }
 
+    public Health damage(int points) {
+        return new Health(value - points);
+    }
 }

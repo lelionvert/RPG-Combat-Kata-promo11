@@ -26,7 +26,7 @@ class Personage {
     }
 
     void damage(Personage personage, int points) {
-
+        personage.health = personage.health.damage(points);
     }
 
     int getHealth() {
