@@ -6,6 +6,7 @@ class Personage {
 
     Personage() {
         this.health = Health.initialize();
+        level = Level.initialize();
     }
 
     boolean isAlive() {
@@ -19,7 +20,7 @@ class Personage {
     public int level() {
         return 1;
     }
-    public boolean level2() {
+    public boolean isStartLevel() {
         return level.isStart();
     }
 }

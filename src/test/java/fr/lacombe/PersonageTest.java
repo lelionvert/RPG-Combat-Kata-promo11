@@ -36,9 +36,9 @@ class PersonageTest {
         Personage paul = new Personage();
 
         // When
-        int actual = paul.level();
+        boolean actual = paul.isStartLevel();
 
         // Then
-        assertThat(actual).isEqualTo(1);
+        assertThat(actual).isTrue();
     }
 }
