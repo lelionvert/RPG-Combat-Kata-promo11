@@ -1,7 +1,7 @@
 package fr.lacombe;
 
-public class Level {
-    public boolean isStart() {
+class Level {
+    boolean isStart() {
         return true;
     }
 }
