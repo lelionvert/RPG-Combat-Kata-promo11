@@ -11,11 +11,6 @@ class Personage {
         return true;
     }
 
-    // TODO: remove later #calisthenic
-    Health getHealth() {
-        return health;
-    }
-
     boolean isFullHealth(){
         return health.isFull();
     }
