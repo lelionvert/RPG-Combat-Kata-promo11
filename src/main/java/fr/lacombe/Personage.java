@@ -18,4 +18,7 @@ class Personage {
     public int level() {
         return 1;
     }
+    public boolean level2() {
+        return Level.isStart();
+    }
 }
