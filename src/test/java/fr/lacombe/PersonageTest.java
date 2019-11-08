@@ -55,7 +55,7 @@ class PersonageTest {
     }
 
     @Test
-    void toto () {
+    void personage_dies_when_damages_exceed_health() {
         // When
         paul.damagedBy(1001);
 
