@@ -3,6 +3,7 @@ package fr.lacombe;
 import java.util.Objects;
 
 class Health {
+    private static final int MAX = 1000;
     private final int value;
 
     private Health(int value) {
@@ -14,11 +15,11 @@ class Health {
     }
 
     static Health initialize(){
-        return new Health(1000);
+        return new Health(MAX);
     }
 
     boolean isFull(){
-        return value == 1000;
+        return value == MAX;
     }
 
     @Override
