@@ -42,10 +42,10 @@ class PersonageTest {
     }
 
     @Test
-void new_personage_has_level_2() {
+    void personage_damages_another_personage() {
         // When
-        Personage mlichel = Personage.initialize();
-        mlichel.damage(paul, 100);
+        Personage thanos = Personage.initialize();
+        thanos.damage(paul, 100);
 
         // Then
         assertThat(paul.getHealth()).isEqualTo(900);
