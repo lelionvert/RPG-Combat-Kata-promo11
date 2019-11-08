@@ -16,6 +16,10 @@ class Personage {
         return health;
     }
 
+    boolean isFullHealth(){
+        return health.isFull();
+    }
+
     public int level() {
         return 1;
     }
