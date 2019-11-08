@@ -53,4 +53,13 @@ class PersonageTest {
         // Then
         assertThat(paul.getHealth()).isEqualTo(Health.of(resultHealth));
     }
+
+    @Test
+    void toto () {
+        // When
+        paul.damagedBy(1001);
+
+        // Then
+        assertThat(paul.isAlive()).isFalse();
+    }
 }
