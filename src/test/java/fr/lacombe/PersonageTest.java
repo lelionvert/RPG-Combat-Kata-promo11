@@ -17,4 +17,16 @@ class PersonageTest {
         // Then
         assertThat(actual).isTrue();
     }
+
+    @Test
+    void new_personage_has_1000_health(){
+        // Given
+        Personage paul = new Personage();
+
+        // When
+        int actual = paul.getHealth();
+
+        // Then
+        assertThat(actual).isEqualTo(1000);
+    }
 }
