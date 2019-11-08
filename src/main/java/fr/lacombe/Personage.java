@@ -15,4 +15,8 @@ class Personage {
     Health getHealth() {
         return health;
     }
+
+    public int level() {
+        return 1;
+    }
 }

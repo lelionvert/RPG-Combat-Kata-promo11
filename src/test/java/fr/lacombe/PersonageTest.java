@@ -29,4 +29,16 @@ class PersonageTest {
         // Then
         assertThat(actual).isEqualTo(Health.of(1000));
     }
+
+    @Test
+    void new_personage_has_level_1(){
+        // Given
+        Personage paul = new Personage();
+
+        // When
+        int actual = paul.level();
+
+        // Then
+        assertThat(actual).isEqualTo(1);
+    }
 }
