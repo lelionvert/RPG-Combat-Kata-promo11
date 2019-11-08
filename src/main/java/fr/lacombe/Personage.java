@@ -12,10 +12,6 @@ class Personage {
     }
 
     int getHealth() {
-        return 1000;
-    }
-
-    int  getHealth2() {
         return health.of();
     }
 }
