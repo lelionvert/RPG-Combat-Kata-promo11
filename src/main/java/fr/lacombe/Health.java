@@ -2,7 +2,7 @@ package fr.lacombe;
 
 import java.util.Objects;
 
-class Health {
+final class Health {
     private static final int MAX = 1000;
     private final int value;
 
