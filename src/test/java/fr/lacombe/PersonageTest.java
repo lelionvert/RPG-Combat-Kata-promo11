@@ -1,14 +1,15 @@
 package fr.lacombe;
 
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-class TestClass {
+import static org.assertj.core.api.Assertions.assertThat;
+
+class PersonageTest {
 
     @Test
     void new_personage_is_alive(){
         Personage paul = new Personage();
-        Assertions.assertThat(paul.isAlive()).isTrue();
+        assertThat(paul.isAlive()).isTrue();
     }
 
 
