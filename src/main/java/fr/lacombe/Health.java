@@ -17,6 +17,10 @@ class Health {
         return new Health(1000);
     }
 
+    boolean isFull(){
+        return value == 1000;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
