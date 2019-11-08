@@ -44,8 +44,7 @@ class PersonageTest {
     @Test
     void personage_damages_another_personage() {
         // When
-        Personage thanos = Personage.initialize();
-        thanos.damagedBy(paul, 100);
+        paul.damagedBy(100);
 
         // Then
         assertThat(paul.getHealth()).isEqualTo(900);

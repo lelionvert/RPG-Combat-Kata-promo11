@@ -25,7 +25,7 @@ class Personage {
         return level.isStart();
     }
 
-    void damagedBy(Personage personage, int points) {
+    void damagedBy(int points) {
         health = health.reduce(points);
     }
 
