@@ -55,7 +55,7 @@ class PersonageTest {
     }
 
     @ParameterizedTest
-    @ValueSource(ints = {1001})
+    @ValueSource(ints = {1001, 1100})
     void personage_dies_when_damages_exceed_health(int damage) {
         // When
         paul.damagedBy(damage);
