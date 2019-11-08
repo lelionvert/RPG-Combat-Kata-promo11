@@ -6,8 +6,8 @@ import org.junit.jupiter.api.Test;
 class TestClass {
 
     @Test
-    void new_character_is_alive(){
-        Personnage paul = new Personnage();
+    void new_personage_is_alive(){
+        Personage paul = new Personage();
         Assertions.assertThat(paul.isAlive()).isTrue();
     }
 
