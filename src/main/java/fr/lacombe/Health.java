@@ -15,7 +15,7 @@ final class Health {
         return new Health(MAX);
     }
 
-    public static Health of(int value) {
+    static Health of(int value) {
         return new Health(value);
     }
 
