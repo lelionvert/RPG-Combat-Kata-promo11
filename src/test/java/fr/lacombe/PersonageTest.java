@@ -9,7 +9,7 @@ class PersonageTest {
     @Test
     void new_personage_is_alive(){
         // Given
-        Personage paul = new Personage();
+        Personage paul = Personage.initialize();
 
         // When
         boolean actual = paul.isAlive();
@@ -21,7 +21,7 @@ class PersonageTest {
     @Test
     void new_personage_has_1000_health(){
         // Given
-        Personage paul = new Personage();
+        Personage paul = Personage.initialize();
 
         // When
         boolean actual = paul.isFullHealth();
@@ -33,7 +33,7 @@ class PersonageTest {
     @Test
     void new_personage_has_level_1(){
         // Given
-        Personage paul = new Personage();
+        Personage paul = Personage.initialize();
 
         // When
         boolean actual = paul.isStartLevel();

@@ -4,9 +4,13 @@ class Personage {
     private Health health;
     private Level level;
 
-    Personage() {
+    private Personage() {
         health = Health.initialize();
         level = Level.initialize();
+    }
+
+    static Personage initialize() {
+        return new Personage();
     }
 
     boolean isAlive() {
