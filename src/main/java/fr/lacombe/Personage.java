@@ -17,7 +17,7 @@ class Personage {
         return true;
     }
 
-    boolean isFullHealth(){
+    boolean isFullHealth() {
         return health.isFull();
     }
 

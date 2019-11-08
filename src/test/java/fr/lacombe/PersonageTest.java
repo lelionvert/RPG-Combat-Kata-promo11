@@ -7,7 +7,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 class PersonageTest {
 
     @Test
-    void new_personage_is_alive(){
+    void new_personage_is_alive() {
         // Given
         Personage paul = Personage.initialize();
 
@@ -19,7 +19,7 @@ class PersonageTest {
     }
 
     @Test
-    void new_personage_has_1000_health(){
+    void new_personage_has_1000_health() {
         // Given
         Personage paul = Personage.initialize();
 
@@ -31,7 +31,7 @@ class PersonageTest {
     }
 
     @Test
-    void new_personage_has_level_1(){
+    void new_personage_has_level_1() {
         // Given
         Personage paul = Personage.initialize();
 
