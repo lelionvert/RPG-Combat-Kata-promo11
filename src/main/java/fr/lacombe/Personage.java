@@ -14,7 +14,11 @@ class Personage {
     }
 
     boolean isAlive() {
-        return !health.isDepleted();
+        return !isDead();
+    }
+
+    boolean isDead() {
+        return health.isDepleted();
     }
 
     boolean isFullHealth() {
