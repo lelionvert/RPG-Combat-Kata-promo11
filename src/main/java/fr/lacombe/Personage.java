@@ -29,7 +29,7 @@ class Personage {
         health = health.reduce(points);
     }
 
-    int getHealth() {
-        return 900;
+    Health getHealth() {
+        return health;
     }
 }

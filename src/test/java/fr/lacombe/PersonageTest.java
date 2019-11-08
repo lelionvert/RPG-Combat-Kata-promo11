@@ -47,6 +47,6 @@ class PersonageTest {
         paul.damagedBy(100);
 
         // Then
-        assertThat(paul.getHealth()).isEqualTo(900);
+        assertThat(paul.getHealth()).isEqualTo(Health.of(900));
     }
 }
