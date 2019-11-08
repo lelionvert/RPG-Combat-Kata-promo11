@@ -45,7 +45,7 @@ class PersonageTest {
     }
 
     @ParameterizedTest
-    @CsvSource({"100, 900"})
+    @CsvSource({"100, 900", "200, 800"})
     void personage_damages_another_personage(int damage, int resultHealth) {
         // When
         paul.damagedBy(damage);
