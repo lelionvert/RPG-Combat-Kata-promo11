@@ -4,7 +4,7 @@ class Personage {
     private Health health;
 
     Personage() {
-        this.health = Health.of(this);
+        this.health = Health.initialize();
     }
 
     boolean isAlive() {
@@ -15,7 +15,7 @@ class Personage {
         return 1000;
     }
 
-    Health getHealth2() {
-        return Health.of(this);
+    int  getHealth2() {
+        return health.of();
     }
 }

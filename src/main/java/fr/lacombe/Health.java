@@ -7,7 +7,11 @@ class Health {
         this.value = 1000;
     }
 
-    static Health of(Personage personage) {
+    int of() {
+        return value;
+    }
+
+    static Health initialize(){
         return new Health();
     }
 }
