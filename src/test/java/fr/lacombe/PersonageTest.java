@@ -8,9 +8,13 @@ class PersonageTest {
 
     @Test
     void new_personage_is_alive(){
+        // Given
         Personage paul = new Personage();
-        assertThat(paul.isAlive()).isTrue();
+
+        // When
+        boolean actual = paul.isAlive();
+
+        // Then
+        assertThat(actual).isTrue();
     }
-
-
 }
