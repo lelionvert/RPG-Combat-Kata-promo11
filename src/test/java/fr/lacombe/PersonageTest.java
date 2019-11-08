@@ -10,7 +10,7 @@ class PersonageTest {
     private Personage paul;
 
     @BeforeEach
-    private void setUp() {
+    void setUp() {
         paul = Personage.initialize();
     }
 
