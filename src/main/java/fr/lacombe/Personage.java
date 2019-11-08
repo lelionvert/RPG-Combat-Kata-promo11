@@ -2,6 +2,7 @@ package fr.lacombe;
 
 class Personage {
     private Health health;
+    private Level level;
 
     Personage() {
         this.health = Health.initialize();
@@ -19,6 +20,6 @@ class Personage {
         return 1;
     }
     public boolean level2() {
-        return Level.isStart();
+        return level.isStart();
     }
 }
