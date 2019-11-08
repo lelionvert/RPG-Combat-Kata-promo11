@@ -1,7 +1,13 @@
 package fr.lacombe;
 
-public class Health {
-    public static int of(Personage personage) {
-        return 0;
+class Health {
+    private int value;
+
+    Health() {
+        this.value = 1000;
+    }
+
+    static Health of(Personage personage) {
+        return new Health();
     }
 }
