@@ -1,16 +1,21 @@
 package fr.lacombe;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 class PersonageTest {
 
+    private Personage paul;
+
+    @BeforeEach
+    private void setUp() {
+        paul = Personage.initialize();
+    }
+
     @Test
     void new_personage_is_alive() {
-        // Given
-        Personage paul = Personage.initialize();
-
         // When
         boolean actual = paul.isAlive();
 
@@ -20,9 +25,6 @@ class PersonageTest {
 
     @Test
     void new_personage_has_1000_health() {
-        // Given
-        Personage paul = Personage.initialize();
-
         // When
         boolean actual = paul.isFullHealth();
 
@@ -32,9 +34,6 @@ class PersonageTest {
 
     @Test
     void new_personage_has_level_1() {
-        // Given
-        Personage paul = Personage.initialize();
-
         // When
         boolean actual = paul.isStartLevel();
 
