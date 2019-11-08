@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 class TestClass {
 
     @Test
-    void setUpEnvironment(){
+    void new_character_is_alive(){
         Personnage paul = new Personnage();
         Assertions.assertThat(paul.isAlive()).isTrue();
     }
