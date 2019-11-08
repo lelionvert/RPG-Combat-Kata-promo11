@@ -3,11 +3,7 @@ package fr.lacombe;
 import java.util.Objects;
 
 class Health {
-    private int value;
-
-    private Health() {
-        this.value = 1000;
-    }
+    private final int value;
 
     private Health(int value) {
         this.value = value;
@@ -18,7 +14,7 @@ class Health {
     }
 
     static Health initialize(){
-        return new Health();
+        return new Health(1000);
     }
 
     @Override
