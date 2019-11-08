@@ -25,11 +25,11 @@ class Personage {
         return level.isStart();
     }
 
-    public void damage(Personage paul, int i) {
+    void damage(Personage personage, int points) {
 
     }
 
-    public int getHealth() {
+    int getHealth() {
         return 900;
     }
 }
