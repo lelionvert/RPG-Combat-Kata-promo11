@@ -7,8 +7,12 @@ class Health {
         this.value = 1000;
     }
 
-    int of() {
-        return value;
+    private Health(int value) {
+        this.value = value;
+    }
+
+    static Health of(int value) {
+        return new Health(value);
     }
 
     static Health initialize(){
