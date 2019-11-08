@@ -2,6 +2,9 @@ package fr.lacombe;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
+import org.junit.jupiter.params.provider.ValueSource;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -41,12 +44,13 @@ class PersonageTest {
         assertThat(actual).isTrue();
     }
 
-    @Test
-    void personage_damages_another_personage() {
+    @ParameterizedTest
+    @CsvSource({"100, 900"})
+    void personage_damages_another_personage(int damage, int resultHealth) {
         // When
-        paul.damagedBy(100);
+        paul.damagedBy(damage);
 
         // Then
-        assertThat(paul.getHealth()).isEqualTo(Health.of(900));
+        assertThat(paul.getHealth()).isEqualTo(Health.of(resultHealth));
     }
 }
